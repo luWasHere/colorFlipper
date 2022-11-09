@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Color Flipper</title>
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;800&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/ef2ea2f592.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <div class="icon">
+            <img src="img/icon.png" alt="Color flipper icon">
+        </div>
+        <div class="container">
+            <h2 class="title">COLOR FLIPPER</h2>
+            <p class="instruction" id="i1">Write a hex color code or generate a random color.</p>
+            <p class="instruction" id="i2" style="display: none;">Invalid hex code.</p>
+            <form class="form" id="color-form">
+                <p>#<input type="text" class="form-input" placeholder="000000" maxlength="6" value="" id="input" autocomplete="off"></p>
+                <div class="btns">
+                    <button type="button" id="show" class="btn" form="color-form" onclick="showInput()">Show color</button>
+                    <button type="button" id="random" class="btn" form="color-form" onclick="randomInput()">Random color</button>
+                </div>
+            </form>
+        </div>
+        <script src="./app.js"></script>   
+    </body>
+
+</html>

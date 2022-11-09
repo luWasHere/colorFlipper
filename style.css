@@ -1,0 +1,134 @@
+:root {
+    --color-selected: #000000;
+}
+
+body {
+    background: #000000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.icon {
+    position: relative;
+    z-index: 10;
+    width: 200px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.container {
+    position: relative;
+    bottom: 80px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(to top, #aaa, #fff);
+    border-radius: 20px;
+    user-select: none;
+}
+
+.container .title {
+    font-family: sans-serif;
+    color: #000;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2px;
+    text-shadow: 0 0 2px #000;
+    width: 300px;
+    
+}
+
+.container .instruction {
+    font-family: sans-serif;
+    color: #343434;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 14px;
+    width: 300px;
+
+}
+
+.container .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+
+    border-radius: 10px;
+
+
+}
+
+.container .form p {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #222;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    background: #999;
+    margin-bottom: 4px;
+}
+
+.container .form .form-input {
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #222;
+    background-color: inherit;
+    margin-left: 3px;
+
+    width: 100%;
+}
+
+.container .form-input::placeholder {
+    color: #555;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn {
+    padding: 10px;
+    width: 49%;
+    margin-top: 5px;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #666;
+    color: #fff;
+    outline: none;
+    border: none;
+    transition-property: background;
+    transition-duration: .1s;
+}
+
+.btn:hover {
+    background: #444;
+}
